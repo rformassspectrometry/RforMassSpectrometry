@@ -1,13 +1,31 @@
 Package: RforMassSpectrometry
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
-Authors@R: 
-    person(given = "First",
-           family = "Last",
-           role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: What license it uses
+Title: R for MassSpectrometry meta-package
+Version: 0.0.1
+Description: The RforMassSpectrometry meta-package loads and manages
+   the core packages of the R for Mass Spectrometry initiative, that
+   provide efficient, thoroughly documented, tested and flexible R
+   software for the analysis and interpretation of high throughput
+   mass spectrometry assays.
+Authors@R: c(person(given = "Laurent", family = "Gatto",
+		    comment = c(ORCID = "0000-0002-1520-2268"),
+		    email = "laurent.gatto@uclouvain.be",
+		    role = c("aut","cre")),
+	     person(given = "Johannes", family = "Rainer",
+		    email = "Johannes.Rainer@eurac.edu",
+		    role = c("aut", "cre"),
+		    comment = c(ORCID = "0000-0002-6977-7147")),
+	     person(given = "Sebastian", family = "Gibb",
+		    email = "mail@sebastiangibb.de",
+		    role = c("aut", "cre"),
+		    comment = c(ORCID = "0000-0001-7406-4443")))
+Depends: R (>= 3.5.0)
+Imports:
+  MsExperiment,
+  Spectra,
+  Features
+URL: https://www.RforMassSpectrometry.org/
+BugReports: https://github.com/RforMassSpectrometry/RforMassSpectrometry/issues
+License: Artistic-2.0
 Encoding: UTF-8
 LazyData: true
+RoxygenNote: 6.1.1
