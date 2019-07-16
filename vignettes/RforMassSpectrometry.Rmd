@@ -1,0 +1,107 @@
+---
+title: "The RforMassSpectrometry project and meta-package"
+author:
+- name: Laurent Gatto
+  affiliation: de Duve Institute, UCLouvain, Belgium
+- name: Sebastian Gibb
+  affiliation: University Medicine Greifswald, Germany
+- name: Johannes Rainer
+  affiliation: Eurac Research, Bolzano, Italy
+package: RforMassSpectrometry
+output:
+  BiocStyle::html_document
+abstract: |
+  RforMassSpectrometry is a meta-package, to manage and document the
+  RforMassSpectrometry (https://www.rformassspectrometry.org/)
+  project and standard operating procedures.
+vignette: |
+  %\VignetteIndexEntry{The RforMassSpectrometry project and meta-package}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+# Introduction
+
+`RforMassSpectrometry` is a meta-package, to manage and document the
+RforMassSpectrometry (https://www.rformassspectrometry.org/)
+project. The goal of the project to provide efficient, thoroughly
+documented, tested and flexible R software for the analysis and
+interpretation of high throughput mass spectrometry assays, including
+proteomics and metabolomics experiments. The project formalises the
+longtime collaborative development efforts of its members under the
+RforMassSpectrometry organisation to facilitate dissemination and
+accessibility of their work.
+
+# Contact
+
+Please see the [contact
+page](https://www.rformassspectrometry.org/contact/) for instructions
+on how to get in touch.
+
+# Code of Conduct
+
+As contributors and maintainers of the RforMassSpectrometry
+initiative, we pledge to respect all people who contribute through
+reporting issues, posting feature requests, updating documentation,
+submitting pull requests or patches, and other activities. We are
+committed to making participation in this project a harassment-free
+experience for everyone, regardless of level of experience, gender,
+gender identity and expression, sexual orientation, disability,
+personal appearance, body size, race, ethnicity, age, or
+religion. Examples of unacceptable behaviour by participants include
+the use of sexual language or imagery, derogatory comments or personal
+attacks, trolling, public or private harassment, insults, or other
+unprofessional conduct. Project maintainers have the right and
+responsibility to remove, edit, or reject comments, commits, code,
+wiki edits, issues, and other contributions that are not aligned to
+this Code of Conduct. Project maintainers who do not follow the Code
+of Conduct may be removed from the project team. Instances of abusive,
+harassing, or otherwise unacceptable behaviour may be reported by
+opening an issue or contacting one or more of the project maintainers.
+
+# Contributions
+
+The RforMassSpectrometry project welcomes contributions in the form of
+ideas, documentation, code, packages, fixes (bugs and typos), ... We
+invite you to discuss any of these opening a GitHub issue, either in
+the [`RforMassSpectrometry`
+package](https://github.com/rformassspectrometry/RforMassSpectrometry/issues),
+or any other package of relevant.
+
+If you have any direct contributions to an existing repository, we
+suggest to first discuss these as an issue if it implies any
+substantial changes (no need for an issue if its a simple typo, and we
+really appreciate those). Contributions, even those from core members,
+are always expected to come in the form of a pull request (PR) that
+then undergoes a formal review. The reviewers might ask for additional
+clarifications and/or changes prior to merging the PR.
+
+We also anticipate to open up some specific requests for contributions
+and invite specific members of the community, if we identify a specific
+need and/or a specific developer to address that need.
+
+### Credit where credit is due
+
+We also want to offer proper credit to those that provide substantial
+contributions. Substantial contributions include, for example
+
+- new functionality that goes beyond e.g. a simple plot function
+- bug fixes combined with related unit tests
+- extended documentation, examples or vignettes describing a complete
+  (potentially alternative) analysis workflow or use-case
+
+Fixing typo(s) isn't considered a substantial contribution per-se,
+even though they are highly appreciated.
+
+Once a substantial contribution passes review and is merged, we will
+add the contributor in the package's author list as an official
+contributor (`ctb` role) or even author (`aut` role) for more
+substantial contributions. The contributors name will also be added to
+the RforMassSpectrometry web page and to any relevant publications that
+directly stem from their work.
+
+# Session info {.unnumbered}
+
+```{r sessionInfo, echo=FALSE}
+sessionInfo()
+```
