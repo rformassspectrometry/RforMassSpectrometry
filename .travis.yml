@@ -28,7 +28,7 @@ jobs:
     - stage: "Check"
     - stage: "Deploy"
       install: skip
-      name: "pkgdown (on master)"
+      name: "pkgdown (on gh-pages)"
       before_deploy:
         - R CMD INSTALL .
         - Rscript -e 'pkgdown::build_site()'

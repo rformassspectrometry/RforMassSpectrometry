@@ -92,7 +92,7 @@ merged^[Useful reading: The [nodejs reviewing PRs for
 reviewers](https://github.com/nodejs/node/blob/master/doc/guides/contributing/pull-requests.md#reviewing-pull-requests)
 guide].
 
-### Credit where credit is due
+### Credit where credit is due  {.unnumbered}
 
 We also want to offer proper credit to those that provide substantial
 contributions. Substantial contributions include, for example
