@@ -1,0 +1,53 @@
+# full script at https://github.com/travis-ci/travis-build/blob/master/lib/travis/build/script/r.rb
+language: r
+r: bioc-release
+r_packages:
+  - pkgdown
+  - knitr
+  - roxygen2
+cache:
+  packages: true
+  directories:
+    - ~/.AnnotationHub
+sudo: required
+warnings_are_errors: true
+dist: trusty
+
+# unfortunately apt packages are not cached
+# we could use these build dependencies just in the "Build" stage and
+# install their runtime libraries counter parts in "Check" but that would make
+# the script more complicated and saves just a few seconds
+addons:
+  apt:
+    packages:
+      - libgit2-dev # git2r
+
+jobs:
+  include:
+    - stage: "Build"
+    - stage: "Check"
+    - stage: "Deploy"
+      install: skip
+      name: "pkgdown (on master)"
+      before_deploy:
+        - R CMD INSTALL .
+        - Rscript -e 'pkgdown::build_site()'
+      deploy:
+        provider: pages
+        skip-cleanup: true
+        github-token: $GITHUB_PAT
+        keep-history: true
+        local-dir: docs
+        on:
+          branch: master
+
+# In general the r-travis script automatically dump the logs after failure but
+# because of a bug in travis the output is often truncated. See
+# https://github.com/travis-ci/travis-ci/issues/6018
+after_failure: sleep 10
+
+notifications:
+  email:
+    recipients: laurent.gatto@uclouvain.com
+    on_failure: change
+    on_success: change
