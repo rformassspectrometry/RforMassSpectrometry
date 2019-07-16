@@ -76,20 +76,28 @@
 </div>
 
     
-        <div class="abstract">
-      <p class="abstract">Abstract</p>
-      RforMassSpectrometry is a meta-package, to manage and document the RforMassSpectrometry (<a href="https://www.rformassspectrometry.org/" class="uri">https://www.rformassspectrometry.org/</a>) project and standard operating procedures.
-    </div>
     
 <div id="introduction" class="section level1">
 <h1 class="hasAnchor">
 <a href="#introduction" class="anchor"></a>Introduction</h1>
 <p><code>RforMassSpectrometry</code> is a meta-package, to manage and document the RforMassSpectrometry (<a href="https://www.rformassspectrometry.org/" class="uri">https://www.rformassspectrometry.org/</a>) project. The goal of the project to provide efficient, thoroughly documented, tested and flexible R software for the analysis and interpretation of high throughput mass spectrometry assays, including proteomics and metabolomics experiments. The project formalises the longtime collaborative development efforts of its members under the RforMassSpectrometry organisation to facilitate dissemination and accessibility of their work.</p>
 </div>
-<div id="contact" class="section level1">
+<div id="installation" class="section level1">
 <h1 class="hasAnchor">
-<a href="#contact" class="anchor"></a>Contact</h1>
-<p>Please see the <a href="https://www.rformassspectrometry.org/contact/">contact page</a> for instructions on how to get in touch.</p>
+<a href="#installation" class="anchor"></a>Installation</h1>
+<p>To install the core R for Mass Spectrometry packages, you will need the <code>BiocManager</code> package, available on CRAN. If not already available, install it with</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="cf">if</span> (<span class="op">!</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">require</a></span>(<span class="st">"BiocManager"</span>))</a>
+<a class="sourceLine" id="cb1-2" data-line-number="2">    <span class="kw">install.package</span>(<span class="st">"BiocManager"</span>)</a></code></pre></div>
+<p>To proceed with the installation, run</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1">BiocManager<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/BiocManager/topics/install">install</a></span>(<span class="st">"RforMassSpectrometry/RforMassSpectrometry"</span>)</a></code></pre></div>
+<p>Note that some very recent Bioconductor will be needed to install and run the suite of R for Mass Spectrometry packages, and will require a recent version of R and possibly even installing the <a href="http://bioconductor.org/developers/how-to/useDevel/">Bioconductor development version</a>.</p>
+<p>Loading the <code>RforMassSpectrometry</code> package with</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(<span class="st">"RforMassSpectrometry"</span>)</a></code></pre></div>
+<pre><code>## 
+## This is RforMassSpectrometry version 0.0.1 
+##   Please not that it is a very early stage project.
+##   Visit https://RforMassSpectrometry.org to get started.</code></pre>
+<p>will load the required core packages.</p>
 </div>
 <div id="code-of-conduct" class="section level1">
 <h1 class="hasAnchor">
@@ -133,17 +141,22 @@
 <li>Always use spaces around binary operators: <code>a + b</code>.</li>
 <li>Lines should be kept shorter than 80 characters. For example the following code isn’t accepted</li>
 </ul>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="co"># no wrap at 80</span></a>
-<a class="sourceLine" id="cb1-2" data-line-number="2">someVeryLongVariableName &lt;-<span class="st"> </span><span class="kw">someVeryLongFunctionName</span>(<span class="dt">withSomeEvenLongerFunctionArgumentA =</span> <span class="dv">1</span>, <span class="dt">withSomeEvenLongerFunctionArgumentB =</span> <span class="dv">2</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb5-1" data-line-number="1"><span class="co"># no wrap at 80</span></a>
+<a class="sourceLine" id="cb5-2" data-line-number="2">someVeryLongVariableName &lt;-<span class="st"> </span><span class="kw">someVeryLongFunctionName</span>(<span class="dt">withSomeEvenLongerFunctionArgumentA =</span> <span class="dv">1</span>, <span class="dt">withSomeEvenLongerFunctionArgumentB =</span> <span class="dv">2</span>)</a></code></pre></div>
 <p>and should be wrapped as shown below:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="co"># alternative 1</span></a>
-<a class="sourceLine" id="cb2-2" data-line-number="2">someVeryLongVariableName &lt;-</a>
-<a class="sourceLine" id="cb2-3" data-line-number="3"><span class="st">    </span><span class="kw">someVeryLongFunctionName</span>(<span class="dt">withSomeEvenLongerFunctionArgumentA =</span> <span class="dv">1</span>,</a>
-<a class="sourceLine" id="cb2-4" data-line-number="4">                             <span class="dt">withSomeEvenLongerFunctionArgumentB =</span> <span class="dv">2</span>)</a>
-<a class="sourceLine" id="cb2-5" data-line-number="5"><span class="co"># alternative 2</span></a>
-<a class="sourceLine" id="cb2-6" data-line-number="6">someVeryLongVariableName &lt;-<span class="st"> </span><span class="kw">someVeryLongFunctionName</span>(</a>
-<a class="sourceLine" id="cb2-7" data-line-number="7">    <span class="dt">withSomeEvenLongerFunctionArgumentA =</span> <span class="dv">1</span>,</a>
-<a class="sourceLine" id="cb2-8" data-line-number="8">    <span class="dt">withSomeEvenLongerFunctionArgumentB =</span> <span class="dv">2</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb6-1" data-line-number="1"><span class="co"># alternative 1</span></a>
+<a class="sourceLine" id="cb6-2" data-line-number="2">someVeryLongVariableName &lt;-</a>
+<a class="sourceLine" id="cb6-3" data-line-number="3"><span class="st">    </span><span class="kw">someVeryLongFunctionName</span>(<span class="dt">withSomeEvenLongerFunctionArgumentA =</span> <span class="dv">1</span>,</a>
+<a class="sourceLine" id="cb6-4" data-line-number="4">                             <span class="dt">withSomeEvenLongerFunctionArgumentB =</span> <span class="dv">2</span>)</a>
+<a class="sourceLine" id="cb6-5" data-line-number="5"><span class="co"># alternative 2</span></a>
+<a class="sourceLine" id="cb6-6" data-line-number="6">someVeryLongVariableName &lt;-<span class="st"> </span><span class="kw">someVeryLongFunctionName</span>(</a>
+<a class="sourceLine" id="cb6-7" data-line-number="7">    <span class="dt">withSomeEvenLongerFunctionArgumentA =</span> <span class="dv">1</span>,</a>
+<a class="sourceLine" id="cb6-8" data-line-number="8">    <span class="dt">withSomeEvenLongerFunctionArgumentB =</span> <span class="dv">2</span>)</a></code></pre></div>
+</div>
+<div id="contact" class="section level1">
+<h1 class="hasAnchor">
+<a href="#contact" class="anchor"></a>Contact</h1>
+<p>Please see the <a href="https://www.rformassspectrometry.org/contact/">contact page</a> for instructions on how to get in touch.</p>
 </div>
 <div id="session-info" class="section level1 unnumbered">
 <h1 class="hasAnchor">
@@ -168,19 +181,37 @@
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## other attached packages:
-## [1] BiocStyle_2.13.2
+## [1] RforMassSpectrometry_0.0.1 BiocStyle_2.13.2          
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] Rcpp_1.0.1         knitr_1.23         xml2_1.2.0        
-##  [4] magrittr_1.5       roxygen2_6.1.1     MASS_7.3-51.4     
-##  [7] R6_2.4.0           rlang_0.4.0        stringr_1.4.0     
-## [10] tools_3.6.0        xfun_0.8           htmltools_0.3.6   
-## [13] commonmark_1.7     yaml_2.2.0         digest_0.6.20     
-## [16] assertthat_0.2.1   rprojroot_1.3-2    bookdown_0.12     
-## [19] pkgdown_1.3.0      crayon_1.3.4       BiocManager_1.30.4
-## [22] fs_1.3.1           memoise_1.1.0      evaluate_0.14     
-## [25] rmarkdown_1.14     stringi_1.4.3      compiler_3.6.0    
-## [28] desc_1.2.0         backports_1.1.4</code></pre>
+##  [1] Rcpp_1.0.1                  compiler_3.6.0             
+##  [3] BiocManager_1.30.4          GenomeInfoDb_1.21.1        
+##  [5] XVector_0.25.0              ProtGenerics_1.17.2        
+##  [7] zlibbioc_1.31.0             Features_0.1.0             
+##  [9] bitops_1.0-6                tools_3.6.0                
+## [11] digest_0.6.20               lattice_0.20-38            
+## [13] evaluate_0.14               memoise_1.1.0              
+## [15] rlang_0.4.0                 Matrix_1.2-17              
+## [17] DelayedArray_0.11.4         commonmark_1.7             
+## [19] yaml_2.2.0                  parallel_3.6.0             
+## [21] pkgdown_1.3.0               xfun_0.8                   
+## [23] Spectra_0.2.0               GenomeInfoDbData_1.2.1     
+## [25] stringr_1.4.0               roxygen2_6.1.1             
+## [27] xml2_1.2.0                  knitr_1.23                 
+## [29] desc_1.2.0                  fs_1.3.1                   
+## [31] S4Vectors_0.23.17           IRanges_2.19.10            
+## [33] grid_3.6.0                  MultiAssayExperiment_1.11.4
+## [35] stats4_3.6.0                rprojroot_1.3-2            
+## [37] Biobase_2.45.0              R6_2.4.0                   
+## [39] BiocParallel_1.19.0         rmarkdown_1.14             
+## [41] bookdown_0.12               AnnotationFilter_1.9.0     
+## [43] magrittr_1.5                matrixStats_0.54.0         
+## [45] backports_1.1.4             htmltools_0.3.6            
+## [47] MASS_7.3-51.4               GenomicRanges_1.37.14      
+## [49] BiocGenerics_0.31.5         MsExperiment_0.0.1         
+## [51] SummarizedExperiment_1.15.5 assertthat_0.2.1           
+## [53] stringi_1.4.3               lazyeval_0.2.2             
+## [55] RCurl_1.95-4.12             crayon_1.3.4</code></pre>
 </div>
 <div class="footnotes">
 <hr>
@@ -196,10 +227,11 @@
 <a href="#tocnav" class="anchor"></a>Contents</h2>
       <ul class="nav nav-pills nav-stacked">
 <li><a href="#introduction">Introduction</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#installation">Installation</a></li>
       <li><a href="#code-of-conduct">Code of Conduct</a></li>
       <li><a href="#contributions">Contributions</a></li>
       <li><a href="#coding-style">Coding style</a></li>
+      <li><a href="#contact">Contact</a></li>
       <li><a href="#session-info">Session info</a></li>
       </ul>
 </div>
