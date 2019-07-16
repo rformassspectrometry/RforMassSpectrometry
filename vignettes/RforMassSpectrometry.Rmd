@@ -10,10 +10,6 @@ author:
 package: RforMassSpectrometry
 output:
   BiocStyle::html_document
-abstract: |
-  RforMassSpectrometry is a meta-package, to manage and document the
-  RforMassSpectrometry (https://www.rformassspectrometry.org/)
-  project and standard operating procedures.
 vignette: |
   %\VignetteIndexEntry{The RforMassSpectrometry project and meta-package}
   %\VignetteEngine{knitr::rmarkdown}
@@ -32,11 +28,38 @@ longtime collaborative development efforts of its members under the
 RforMassSpectrometry organisation to facilitate dissemination and
 accessibility of their work.
 
-# Contact
+# Installation
 
-Please see the [contact
-page](https://www.rformassspectrometry.org/contact/) for instructions
-on how to get in touch.
+To install the core R for Mass Spectrometry packages, you will need
+the `BiocManager` package, available on CRAN. If not already
+available, install it with
+
+```{r install1, eval = FALSE}
+if (!require("BiocManager"))
+    install.package("BiocManager")
+```
+
+To proceed with the installation, run
+
+```{r install2, eval = FALSE}
+BiocManager::install("RforMassSpectrometry/RforMassSpectrometry")
+```
+
+Note that some very recent Bioconductor will be needed to install and
+run the suite of R for Mass Spectrometry packages, and will require a
+recent version of R and possibly even installing the [Bioconductor
+development
+version](http://bioconductor.org/developers/how-to/useDevel/).
+
+
+Loading the `RforMassSpectrometry` package with 
+
+```{r}
+library("RforMassSpectrometry")
+```
+
+will load the required core packages.
+
 
 # Code of Conduct
 
@@ -112,6 +135,7 @@ substantial contributions. The contributors name will also be added to
 the RforMassSpectrometry web page and to any relevant publications that
 directly stem from their work.
 
+
 # Coding style
 
 The RforMassSpectromery packages follows the [Bioconductor style
@@ -151,6 +175,12 @@ someVeryLongVariableName <- someVeryLongFunctionName(
     withSomeEvenLongerFunctionArgumentA = 1,
     withSomeEvenLongerFunctionArgumentB = 2)
 ```
+
+# Contact
+
+Please see the [contact
+page](https://www.rformassspectrometry.org/contact/) for instructions
+on how to get in touch.
 
 # Session info {.unnumbered}
 
