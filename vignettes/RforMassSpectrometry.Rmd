@@ -73,12 +73,24 @@ suggest to first discuss these as an issue if it implies any
 substantial changes (no need for an issue if its a simple typo, and we
 really appreciate those). Contributions, even those from core members,
 are always expected to come in the form of a pull request (PR) that
-then undergoes a formal review. The reviewers might ask for additional
-clarifications and/or changes prior to merging the PR.
+then undergoes a formal review. To do this, start by forking the
+package you want to contribute to. It is also advised to work in, and
+make the PR, from a non-master branch. Good branch names include
+`feat-X`, `bug-Y`, `docs-Z` for new features, bug fixes and
+documentation updates respectively. The reviewers might ask for
+additional clarifications and/or changes prior to merging the PR.
+
+When contemplating contributing code, please follow the style guide
+below.
 
 We also anticipate to open up some specific requests for contributions
 and invite specific members of the community, if we identify a specific
 need and/or a specific developer to address that need.
+
+Reviewers we will do their best to help you to get the PR
+merged^[Useful reading: The [nodejs reviewing PRs for
+reviewers](https://github.com/nodejs/node/blob/master/doc/guides/contributing/pull-requests.md#reviewing-pull-requests)
+guide].
 
 ### Credit where credit is due
 
@@ -99,6 +111,46 @@ contributor (`ctb` role) or even author (`aut` role) for more
 substantial contributions. The contributors name will also be added to
 the RforMassSpectrometry web page and to any relevant publications that
 directly stem from their work.
+
+# Coding style
+
+The RforMassSpectromery packages follows the [Bioconductor style
+guide](https://bioconductor.org/developers/how-to/coding-style/). In
+particular
+
+- Do not use `.` when naming symbols.
+- A leading `.` can be used for hidden/local functions or variables.
+- Snake case should be restricted to internal functions. For
+  consistency, we favour camel case for public functions.
+- Class names should start with a capital and each class should posses
+  a constructor with identical name. Running the constructor without
+  any input should produce a valid empty object.
+- Use `##` to start full-line comments.
+- For roxygen headers `#'` is preferred, although `##'` is tolerated.
+- Use spaces between `=` in function arguments or class definition:
+  `f(a = 1, b = 2)`.
+- Always use a space after a comma: `a, b, c`.
+- Always use spaces around binary operators: `a + b`.
+- Lines should be kept shorter than 80 characters. For example the
+  following code isn't accepted
+
+```r
+# no wrap at 80
+someVeryLongVariableName <- someVeryLongFunctionName(withSomeEvenLongerFunctionArgumentA = 1, withSomeEvenLongerFunctionArgumentB = 2)
+```
+
+and should be wrapped as shown below:
+
+```r
+# alternative 1
+someVeryLongVariableName <-
+    someVeryLongFunctionName(withSomeEvenLongerFunctionArgumentA = 1,
+                             withSomeEvenLongerFunctionArgumentB = 2)
+# alternative 2
+someVeryLongVariableName <- someVeryLongFunctionName(
+    withSomeEvenLongerFunctionArgumentA = 1,
+    withSomeEvenLongerFunctionArgumentB = 2)
+```
 
 # Session info {.unnumbered}
 
