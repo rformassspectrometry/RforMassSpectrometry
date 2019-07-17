@@ -78,19 +78,26 @@ package you want to contribute to. It is also advised to work in, and
 make the PR, from a non-master branch. Good branch names include
 `feat-X`, `bug-Y`, `docs-Z` for new features, bug fixes and
 documentation updates respectively. The reviewers might ask for
-additional clarifications and/or changes prior to merging the PR.
+additional clarifications and/or changes prior to merging the PR. When
+contemplating contributing code, please follow the style guide below.
 
-When contemplating contributing code, please follow the style guide
-below.
-
-We also anticipate to open up some specific requests for contributions
-and invite specific members of the community, if we identify a specific
-need and/or a specific developer to address that need.
+See also the
+[tidyverse](https://github.com/tidyverse/.github/blob/master/CONTRIBUTING.md)
+and
+[Mycrof](https://github.com/MycroftAI/mycroft-core/blob/dev/.github/CONTRIBUTING.md)
+contribution guides for additional resources and instructions.
 
 Reviewers we will do their best to help you to get the PR
 merged^[Useful reading: The [nodejs reviewing PRs for
 reviewers](https://github.com/nodejs/node/blob/master/doc/guides/contributing/pull-requests.md#reviewing-pull-requests)
 guide].
+
+
+We also anticipate to open up some specific requests for contributions
+and invite specific members of the community, if we identify a specific
+need and/or a specific developer to address that need.
+
+
 
 ### Credit where credit is due  {.unnumbered}
 
