@@ -1,5 +1,5 @@
 ---
-title: "The RforMassSpectrometry project and meta-package"
+title: "The *R for Mass Spectrometry* project and meta-package"
 author:
 - name: Laurent Gatto
   affiliation: de Duve Institute, UCLouvain, Belgium
@@ -11,7 +11,7 @@ package: RforMassSpectrometry
 output:
   BiocStyle::html_document
 vignette: |
-  %\VignetteIndexEntry{The RforMassSpectrometry project and meta-package}
+  %\VignetteIndexEntry{The R for Mass Spectrometry project and meta-package}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -19,13 +19,13 @@ vignette: |
 # Introduction
 
 `RforMassSpectrometry` is a meta-package, to manage and document the
-RforMassSpectrometry (https://www.rformassspectrometry.org/)
+*R for Mass Spectrometry* (https://www.rformassspectrometry.org/)
 project. The goal of the project to provide efficient, thoroughly
 documented, tested and flexible R software for the analysis and
 interpretation of high throughput mass spectrometry assays, including
 proteomics and metabolomics experiments. The project formalises the
 longtime collaborative development efforts of its members under the
-RforMassSpectrometry organisation to facilitate dissemination and
+*R for Mass Spectrometry* organisation to facilitate dissemination and
 accessibility of their work.
 
 # Installation
@@ -63,7 +63,7 @@ will load the required core packages.
 
 # Code of Conduct
 
-As contributors and maintainers of the RforMassSpectrometry
+As contributors and maintainers of the *R for Mass Spectrometry*
 initiative, we pledge to respect all people who contribute through
 reporting issues, posting feature requests, updating documentation,
 submitting pull requests or patches, and other activities. We are
@@ -87,7 +87,7 @@ This Code of Conduct is adapted from the Contributor Covenant, version
 
 # Contributions
 
-The RforMassSpectrometry project welcomes contributions in the form of
+The *R for Mass Spectrometry* project welcomes contributions in the form of
 ideas, documentation, code, packages, fixes (bugs and typos), ... We
 invite you to discuss any of these opening a GitHub issue, either in
 the [`RforMassSpectrometry`
@@ -142,13 +142,13 @@ Once a substantial contribution passes review and is merged, we will
 add the contributor in the package's author list as an official
 contributor (`ctb` role) or even author (`aut` role) for more
 substantial contributions. The contributors name will also be added to
-the RforMassSpectrometry web page and to any relevant publications that
+the *R for Mass Spectrometry* web page and to any relevant publications that
 directly stem from their work.
 
 
 # Coding style
 
-The RforMassSpectromery packages follows the [Bioconductor style
+The *R for Mass Spectrometry* packages follows the [Bioconductor style
 guide](https://bioconductor.org/developers/how-to/coding-style/). In
 particular
 
