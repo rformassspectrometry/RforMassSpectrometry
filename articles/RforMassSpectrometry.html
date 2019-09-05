@@ -5,11 +5,12 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The <em>R for Mass Spectrometry</em> project and meta-package • RforMassSpectrometry</title>
+<title>The *R for Mass Spectrometry* project and meta-package • RforMassSpectrometry</title>
 <!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script><!-- Bootstrap --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous">
-<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script><!-- sticky kit --><script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js" integrity="sha256-c4Rlo1ZozqTPE2RLuvbusY3+SU1pQaJC0TjuhygMipw=" crossorigin="anonymous"></script><!-- pkgdown --><link href="../pkgdown.css" rel="stylesheet">
-<script src="../pkgdown.js"></script><meta property="og:title" content="The &lt;em&gt;R for Mass Spectrometry&lt;/em&gt; project and meta-package">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/all.min.css" integrity="sha256-nAmazAk6vS34Xqo0BSrTb+abbtFlgsFK7NKSi6o7Y78=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.1/css/v4-shims.min.css" integrity="sha256-6qHlizsOWFskGlwVOKuns+D1nB6ssZrHQrNj1wGplHc=" crossorigin="anonymous">
+<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/headroom.min.js" integrity="sha256-DJFC1kqIhelURkuza0AvYal5RxMtpzLjFhsnVIeuk+U=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.9.4/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="../pkgdown.css" rel="stylesheet">
+<script src="../pkgdown.js"></script><meta property="og:title" content="The *R for Mass Spectrometry* project and meta-package">
 <meta property="og:description" content="">
 <meta name="twitter:card" content="summary">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
@@ -30,7 +31,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">RforMassSpectrometry</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.1</span>
       </span>
     </div>
 
@@ -38,7 +39,7 @@
       <ul class="nav navbar-nav">
 <li>
   <a href="../index.html">
-    <span class="fa fa-home fa-lg"></span>
+    <span class="fas fa fas fa-home fa-lg"></span>
      
   </a>
 </li>
@@ -58,6 +59,7 @@
 <!--/.navbar -->
 
       
+
       </header><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
@@ -86,15 +88,15 @@
 <h1 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h1>
 <p>To install the core R for Mass Spectrometry packages, you will need the <code>BiocManager</code> package, available on CRAN. If not already available, install it with</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="cf">if</span> (<span class="op">!</span><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">require</a></span>(<span class="st">"BiocManager"</span>))</a>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="cf">if</span> (<span class="op">!</span><span class="kw"><a href="https://rdrr.io/r/base/library.html">require</a></span>(<span class="st">"BiocManager"</span>))</a>
 <a class="sourceLine" id="cb1-2" data-line-number="2">    <span class="kw">install.package</span>(<span class="st">"BiocManager"</span>)</a></code></pre></div>
 <p>To proceed with the installation, run</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1">BiocManager<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/BiocManager/topics/install">install</a></span>(<span class="st">"RforMassSpectrometry/RforMassSpectrometry"</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1">BiocManager<span class="op">::</span><span class="kw"><a href="https://rdrr.io/pkg/BiocManager/man/install.html">install</a></span>(<span class="st">"RforMassSpectrometry/RforMassSpectrometry"</span>)</a></code></pre></div>
 <p>Note that some very recent Bioconductor will be needed to install and run the suite of R for Mass Spectrometry packages, and will require a recent version of R and possibly even installing the <a href="http://bioconductor.org/developers/how-to/useDevel/">Bioconductor development version</a>.</p>
 <p>Loading the <code>RforMassSpectrometry</code> package with</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/library">library</a></span>(<span class="st">"RforMassSpectrometry"</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span>(<span class="st">"RforMassSpectrometry"</span>)</a></code></pre></div>
 <pre><code>## 
-## This is RforMassSpectrometry version 0.1.0 
+## This is RforMassSpectrometry version 0.1.1 
 ##   Please not that it is a very early stage project.
 ##   Visit https://RforMassSpectrometry.org to get started.</code></pre>
 <p>will load the required core packages.</p>
@@ -113,6 +115,33 @@
 <p>See also the <a href="https://github.com/tidyverse/.github/blob/master/CONTRIBUTING.md">tidyverse</a> and <a href="https://github.com/MycroftAI/mycroft-core/blob/dev/.github/CONTRIBUTING.md">Mycrof</a> contribution guides for additional resources and instructions.</p>
 <p>Reviewers we will do their best to help you to get the PR merged<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>.</p>
 <p>We also anticipate to open up some specific requests for contributions and invite specific members of the community, if we identify a specific need and/or a specific developer to address that need.</p>
+<div id="commit-messages" class="section level3 unnumbered">
+<h3 class="hasAnchor">
+<a href="#commit-messages" class="anchor"></a>Commit messages</h3>
+<p>Commit messages should follow the <a href="https://www.conventionalcommits.org/en/v1.0.0-beta.4/#summary">Conventional Commits</a> guidelines. In particular, the following <em>types</em> are recommended (based on <a href="https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines">angulars types</a>):</p>
+<ul>
+<li>
+<code>build:</code> Changes that affect the build system or external dependencies (example scopes: depends, suggests, imports, …).</li>
+<li>
+<code>ci:</code> Changes to the continous integration (CI) configuration files and scripts (example: Travis configuration file).</li>
+<li>
+<code>docs:</code> Documentation only changes, including manual pages and vignettes.</li>
+<li>
+<code>feat:</code> A new feature.</li>
+<li>
+<code>fix:</code> A bug fix.</li>
+<li>
+<code>perf:</code> A code change that improves performance.</li>
+<li>
+<code>refactor:</code> A code change that neither fixes a bug nor adds a feature.</li>
+<li>
+<code>style:</code> Changes that do not affect the meaning of the code (white-space, formatting, …).</li>
+<li>
+<code>test:</code> Adding missing tests or correcting existing tests.</li>
+<li>
+<code>other:</code> Anything that doesn’t fix in the above. Consider opening an issue suggestion a new type.</li>
+</ul>
+</div>
 <div id="credit-where-credit-is-due" class="section level3 unnumbered">
 <h3 class="hasAnchor">
 <a href="#credit-where-credit-is-due" class="anchor"></a>Credit where credit is due</h3>
@@ -182,38 +211,36 @@
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## other attached packages:
-## [1] RforMassSpectrometry_0.1.0 BiocStyle_2.13.2          
+## [1] RforMassSpectrometry_0.1.1 BiocStyle_2.13.2          
 ## 
 ## loaded via a namespace (and not attached):
 ##  [1] Rcpp_1.0.2                  compiler_3.6.1             
 ##  [3] BiocManager_1.30.4          GenomeInfoDb_1.21.1        
-##  [5] XVector_0.25.0              ProtGenerics_1.17.2        
-##  [7] zlibbioc_1.31.0             Features_0.1.0             
-##  [9] bitops_1.0-6                tools_3.6.1                
+##  [5] XVector_0.25.0              ProtGenerics_1.17.4        
+##  [7] Features_0.1.0              bitops_1.0-6               
+##  [9] tools_3.6.1                 zlibbioc_1.31.0            
 ## [11] digest_0.6.20               lattice_0.20-38            
 ## [13] evaluate_0.14               memoise_1.1.0              
 ## [15] rlang_0.4.0                 Matrix_1.2-17              
-## [17] DelayedArray_0.11.4         commonmark_1.7             
-## [19] yaml_2.2.0                  parallel_3.6.1             
-## [21] pkgdown_1.3.0               xfun_0.8                   
-## [23] Spectra_0.3.0               GenomeInfoDbData_1.2.1     
-## [25] stringr_1.4.0               roxygen2_6.1.1             
-## [27] xml2_1.2.1                  knitr_1.23                 
-## [29] MsCoreUtils_0.0.1           desc_1.2.0                 
-## [31] fs_1.3.1                    S4Vectors_0.23.17          
-## [33] IRanges_2.19.10             grid_3.6.1                 
-## [35] MultiAssayExperiment_1.11.4 stats4_3.6.1               
-## [37] rprojroot_1.3-2             Biobase_2.45.0             
-## [39] R6_2.4.0                    BiocParallel_1.19.0        
-## [41] rmarkdown_1.14              bookdown_0.12              
-## [43] AnnotationFilter_1.9.0      magrittr_1.5               
-## [45] matrixStats_0.54.0          backports_1.1.4            
-## [47] htmltools_0.3.6             MASS_7.3-51.4              
-## [49] GenomicRanges_1.37.14       BiocGenerics_0.31.5        
-## [51] MsExperiment_0.0.1          SummarizedExperiment_1.15.5
-## [53] assertthat_0.2.1            stringi_1.4.3              
-## [55] lazyeval_0.2.2              RCurl_1.95-4.12            
-## [57] crayon_1.3.4</code></pre>
+## [17] DelayedArray_0.11.4         yaml_2.2.0                 
+## [19] parallel_3.6.1              pkgdown_1.4.0              
+## [21] xfun_0.9                    Spectra_0.3.0              
+## [23] GenomeInfoDbData_1.2.1      stringr_1.4.0              
+## [25] knitr_1.24                  MsCoreUtils_0.0.2          
+## [27] desc_1.2.0                  fs_1.3.1                   
+## [29] S4Vectors_0.23.21           IRanges_2.19.14            
+## [31] grid_3.6.1                  MultiAssayExperiment_1.11.7
+## [33] stats4_3.6.1                rprojroot_1.3-2            
+## [35] Biobase_2.45.1              R6_2.4.0                   
+## [37] BiocParallel_1.19.2         rmarkdown_1.15             
+## [39] bookdown_0.13               AnnotationFilter_1.9.0     
+## [41] magrittr_1.5                matrixStats_0.54.0         
+## [43] backports_1.1.4             htmltools_0.3.6            
+## [45] MASS_7.3-51.4               GenomicRanges_1.37.15      
+## [47] BiocGenerics_0.31.5         MsExperiment_0.0.1         
+## [49] SummarizedExperiment_1.15.8 assertthat_0.2.1           
+## [51] stringi_1.4.3               RCurl_1.95-4.12            
+## [53] lazyeval_0.2.2              crayon_1.3.4</code></pre>
 </div>
 <div class="footnotes">
 <hr>
@@ -224,6 +251,7 @@
   </div>
 
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
+
         <div id="tocnav">
       <h2 class="hasAnchor">
 <a href="#tocnav" class="anchor"></a>Contents</h2>
@@ -242,17 +270,20 @@
 </div>
 
 
+
       <footer><div class="copyright">
   <p>Developed by Laurent Gatto, Johannes Rainer, Sebastian Gibb.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.3.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.4.0.</p>
 </div>
+
       </footer>
 </div>
 
   
+
 
   </body>
 </html>
