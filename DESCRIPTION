@@ -1,6 +1,6 @@
 Package: RforMassSpectrometry
 Title: R for MassSpectrometry meta-package
-Version: 0.1.0
+Version: 0.1.1
 Description: The RforMassSpectrometry meta-package loads and manages
    the core packages of the R for Mass Spectrometry initiative, that
    provide efficient, thoroughly documented, tested and flexible R

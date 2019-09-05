@@ -52,7 +52,7 @@ development
 version](http://bioconductor.org/developers/how-to/useDevel/).
 
 
-Loading the `RforMassSpectrometry` package with 
+Loading the `RforMassSpectrometry` package with
 
 ```{r}
 library("RforMassSpectrometry")
@@ -123,6 +123,29 @@ We also anticipate to open up some specific requests for contributions
 and invite specific members of the community, if we identify a specific
 need and/or a specific developer to address that need.
 
+### Commit messages   {.unnumbered}
+
+Commit messages should follow the [Conventional
+Commits](https://www.conventionalcommits.org/en/v1.0.0-beta.4/#summary)
+guidelines. In particular, the following *types* are recommended
+(based on [angulars
+types](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)):
+
+- `build:` Changes that affect the build system or external
+  dependencies (example scopes: depends, suggests, imports, ...).
+- `ci:` Changes to the continous integration (CI) configuration files
+  and scripts (example: Travis configuration file).
+- `docs:` Documentation only changes, including manual pages and vignettes.
+- `feat:` A new feature.
+- `fix:` A bug fix.
+- `perf:` A code change that improves performance.
+- `refactor:` A code change that neither fixes a bug nor adds a
+  feature.
+- `style:` Changes that do not affect the meaning of the code
+  (white-space, formatting, ...).
+- `test:` Adding missing tests or correcting existing tests.
+- `other:` Anything that doesn't fix in the above. Consider opening an
+  issue suggestion a new type.
 
 
 ### Credit where credit is due  {.unnumbered}
@@ -185,6 +208,7 @@ someVeryLongVariableName <- someVeryLongFunctionName(
     withSomeEvenLongerFunctionArgumentA = 1,
     withSomeEvenLongerFunctionArgumentB = 2)
 ```
+
 
 # Contact
 
