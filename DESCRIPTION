@@ -27,7 +27,7 @@ Suggests: BiocStyle, knitr, rmarkdown
 Remotes:
   RforMassSpectrometry/MsExperiment,
   RforMassSpectrometry/Spectra,
-  RforMassSpectrometry/Features
+  RforMassSpectrometry/Features,
   RforMassSpectrometry/MsCoreUtils
 URL: https://www.RforMassSpectrometry.org/
 BugReports: https://github.com/RforMassSpectrometry/RforMassSpectrometry/issues
