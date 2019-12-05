@@ -21,7 +21,7 @@ Authors@R: c(person(given = "Laurent", family = "Gatto",
 Depends: R (>= 3.5.0)
 Imports:
   MsExperiment,
-  Chromatograms
+  Chromatograms,
   Spectra,
   Features,
   MsCoreUtils
