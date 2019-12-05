@@ -21,12 +21,14 @@ Authors@R: c(person(given = "Laurent", family = "Gatto",
 Depends: R (>= 3.5.0)
 Imports:
   MsExperiment,
+  Chromatograms
   Spectra,
   Features
 Suggests: BiocStyle, knitr, rmarkdown
 Remotes:
   RforMassSpectrometry/MsExperiment,
   RforMassSpectrometry/Spectra,
+  RforMassSpectrometry/Chromatograms,
   RforMassSpectrometry/Features
 URL: https://www.RforMassSpectrometry.org/
 BugReports: https://github.com/RforMassSpectrometry/RforMassSpectrometry/issues
