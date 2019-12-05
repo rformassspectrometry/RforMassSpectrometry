@@ -1,6 +1,6 @@
 Package: RforMassSpectrometry
 Title: R for MassSpectrometry meta-package
-Version: 0.1.1
+Version: 0.1.2
 Description: The RforMassSpectrometry meta-package loads and manages
    the core packages of the R for Mass Spectrometry initiative, that
    provide efficient, thoroughly documented, tested and flexible R
@@ -21,13 +21,17 @@ Authors@R: c(person(given = "Laurent", family = "Gatto",
 Depends: R (>= 3.5.0)
 Imports:
   MsExperiment,
+  Chromatograms
   Spectra,
-  Features
+  Features,
+  MsCoreUtils
 Suggests: BiocStyle, knitr, rmarkdown
 Remotes:
   RforMassSpectrometry/MsExperiment,
   RforMassSpectrometry/Spectra,
-  RforMassSpectrometry/Features
+  RforMassSpectrometry/Chromatograms,
+  RforMassSpectrometry/Features,
+  RforMassSpectrometry/MsCoreUtils
 URL: https://www.RforMassSpectrometry.org/
 BugReports: https://github.com/RforMassSpectrometry/RforMassSpectrometry/issues
 VignetteBuilder: knitr
