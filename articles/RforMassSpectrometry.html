@@ -110,10 +110,12 @@
 <div id="contributions" class="section level1">
 <h1 class="hasAnchor">
 <a href="#contributions" class="anchor"></a>Contributions</h1>
-<p>The <em>R for Mass Spectrometry</em> project welcomes contributions in the form of ideas, documentation, code, packages, fixes (bugs and typos), … We invite you to discuss any of these opening a GitHub issue, either in the <a href="https://github.com/rformassspectrometry/RforMassSpectrometry/issues"><code>RforMassSpectrometry</code> package</a>, or any other package of relevant.</p>
-<p>If you have any direct contributions to an existing repository, we suggest to first discuss these as an issue if it implies any substantial changes (no need for an issue if its a simple typo, and we really appreciate those). Contributions, even those from core members, are always expected to come in the form of a pull request (PR) that then undergoes a formal review. To do this, start by forking the package you want to contribute to. It is also advised to work in, and make the PR, from a non-master branch. Good branch names include <code>feat-X</code>, <code>bug-Y</code>, <code>docs-Z</code> for new features, bug fixes and documentation updates respectively. The reviewers might ask for additional clarifications and/or changes prior to merging the PR. When contemplating contributing code, please follow the style guide below.</p>
+<p>The <em>R for Mass Spectrometry</em> project welcomes contributions in the form of ideas, documentation, code, packages, fixes (bugs and typos), … We invite you to discuss any of these opening a GitHub issue in the relevant package github repository.</p>
+<p>If you have any direct contributions to an existing repository, we suggest to first discuss these as an issue if it implies any substantial changes (no need for an issue if its a simple typo, and we really appreciate those).</p>
+<p>Contributions, even those from core members, are always expected to come in the form of a pull request (PR) that then undergoes a formal review. To do this, start by forking the package you want to contribute. It is also advised to work in, and make the PR, from a non-master branch. Good branch names include <code>issueX</code> when it relates to a specific issue, <code>feat-X</code>, <code>bug-Y</code>, <code>docs-Z</code> for new features, bug fixes and documentation updates respectively. The reviewers might ask for additional clarifications and/or changes prior to merging the PR. When contemplating contributing code, please follow the style guide below.</p>
+<p>In particular, when several developers collaborate on a feature, an admin should create a dedicated branch <code>RforMassSpectrometry/Package:branch</code>. Developers should then fetch that branch in their local copy of the <code>Package</code> repository and send PRs to that branch too, where it will be reviewed, and eventually merged into <code>RforMassSpectrometry/Package:master</code>.</p>
 <p>See also the <a href="https://github.com/tidyverse/.github/blob/master/CONTRIBUTING.md">tidyverse</a> and <a href="https://github.com/MycroftAI/mycroft-core/blob/dev/.github/CONTRIBUTING.md">Mycrof</a> contribution guides for additional resources and instructions.</p>
-<p>Reviewers we will do their best to help you to get the PR merged<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>.</p>
+<p>Reviewers will do their best to help you to get the PR merged<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a>.</p>
 <p>We also anticipate to open up some specific requests for contributions and invite specific members of the community, if we identify a specific need and/or a specific developer to address that need.</p>
 <div id="commit-messages" class="section level3 unnumbered">
 <h3 class="hasAnchor">
@@ -191,7 +193,7 @@
 <div id="session-info" class="section level1 unnumbered">
 <h1 class="hasAnchor">
 <a href="#session-info" class="anchor"></a>Session info</h1>
-<pre><code>## R Under development (unstable) (2020-02-04 r77770)
+<pre><code>## R Under development (unstable) (2020-03-13 r77948)
 ## Platform: x86_64-pc-linux-gnu (64-bit)
 ## Running under: Ubuntu 14.04.5 LTS
 ## 
@@ -214,33 +216,33 @@
 ## [1] RforMassSpectrometry_0.1.2 BiocStyle_2.15.6          
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] Rcpp_1.0.3                  compiler_4.0.0             
-##  [3] BiocManager_1.30.10         GenomeInfoDb_1.23.10       
-##  [5] XVector_0.27.0              ProtGenerics_1.19.3        
-##  [7] Features_0.4.0              bitops_1.0-6               
-##  [9] tools_4.0.0                 zlibbioc_1.33.1            
-## [11] digest_0.6.23               lattice_0.20-38            
-## [13] evaluate_0.14               memoise_1.1.0              
-## [15] rlang_0.4.4                 Matrix_1.2-18              
-## [17] DelayedArray_0.13.3         yaml_2.2.1                 
-## [19] parallel_4.0.0              pkgdown_1.4.1              
-## [21] xfun_0.12                   Spectra_0.4.1              
-## [23] GenomeInfoDbData_1.2.2      stringr_1.4.0              
-## [25] knitr_1.27                  MsCoreUtils_0.0.5          
-## [27] desc_1.2.0                  fs_1.3.1                   
-## [29] S4Vectors_0.25.12           IRanges_2.21.3             
-## [31] grid_4.0.0                  MultiAssayExperiment_1.13.6
-## [33] stats4_4.0.0                rprojroot_1.3-2            
-## [35] Biobase_2.47.2              R6_2.4.1                   
-## [37] BiocParallel_1.21.2         rmarkdown_2.1              
-## [39] bookdown_0.17               AnnotationFilter_1.11.0    
-## [41] magrittr_1.5                matrixStats_0.55.0         
-## [43] backports_1.1.5             htmltools_0.4.0            
-## [45] MASS_7.3-51.5               GenomicRanges_1.39.1       
-## [47] BiocGenerics_0.33.0         MsExperiment_0.0.1         
-## [49] SummarizedExperiment_1.17.1 assertthat_0.2.1           
-## [51] stringi_1.4.5               RCurl_1.98-1.1             
-## [53] lazyeval_0.2.2              crayon_1.3.4</code></pre>
+##  [1] Rcpp_1.0.4                   compiler_4.0.0              
+##  [3] BiocManager_1.30.10          GenomeInfoDb_1.23.13        
+##  [5] XVector_0.27.1               ProtGenerics_1.19.3         
+##  [7] Features_0.4.0               bitops_1.0-6                
+##  [9] tools_4.0.0                  zlibbioc_1.33.1             
+## [11] digest_0.6.25                lattice_0.20-40             
+## [13] evaluate_0.14                memoise_1.1.0               
+## [15] rlang_0.4.5                  Matrix_1.2-18               
+## [17] DelayedArray_0.13.7          yaml_2.2.1                  
+## [19] parallel_4.0.0               pkgdown_1.4.1               
+## [21] xfun_0.12                    Spectra_0.5.0               
+## [23] GenomeInfoDbData_1.2.2       stringr_1.4.0               
+## [25] knitr_1.28                   MsCoreUtils_0.99.1          
+## [27] desc_1.2.0                   fs_1.3.2                    
+## [29] S4Vectors_0.25.13            IRanges_2.21.5              
+## [31] grid_4.0.0                   MultiAssayExperiment_1.13.14
+## [33] stats4_4.0.0                 rprojroot_1.3-2             
+## [35] Biobase_2.47.3               R6_2.4.1                    
+## [37] BiocParallel_1.21.2          rmarkdown_2.1               
+## [39] bookdown_0.18                AnnotationFilter_1.11.0     
+## [41] magrittr_1.5                 matrixStats_0.56.0          
+## [43] backports_1.1.5              htmltools_0.4.0             
+## [45] MASS_7.3-51.5                GenomicRanges_1.39.2        
+## [47] BiocGenerics_0.33.0          MsExperiment_0.0.1          
+## [49] SummarizedExperiment_1.17.3  assertthat_0.2.1            
+## [51] stringi_1.4.6                RCurl_1.98-1.1              
+## [53] lazyeval_0.2.2               crayon_1.3.4</code></pre>
 </div>
 <div class="footnotes">
 <hr>
