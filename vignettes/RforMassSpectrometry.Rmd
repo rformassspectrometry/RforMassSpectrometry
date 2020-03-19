@@ -87,25 +87,34 @@ This Code of Conduct is adapted from the Contributor Covenant, version
 
 # Contributions
 
-The *R for Mass Spectrometry* project welcomes contributions in the form of
-ideas, documentation, code, packages, fixes (bugs and typos), ... We
-invite you to discuss any of these opening a GitHub issue, either in
-the [`RforMassSpectrometry`
-package](https://github.com/rformassspectrometry/RforMassSpectrometry/issues),
-or any other package of relevant.
+The *R for Mass Spectrometry* project welcomes contributions in the
+form of ideas, documentation, code, packages, fixes (bugs and typos),
+... We invite you to discuss any of these opening a GitHub issue in
+the relevant package github repository.
 
 If you have any direct contributions to an existing repository, we
 suggest to first discuss these as an issue if it implies any
 substantial changes (no need for an issue if its a simple typo, and we
-really appreciate those). Contributions, even those from core members,
-are always expected to come in the form of a pull request (PR) that
-then undergoes a formal review. To do this, start by forking the
-package you want to contribute to. It is also advised to work in, and
-make the PR, from a non-master branch. Good branch names include
-`feat-X`, `bug-Y`, `docs-Z` for new features, bug fixes and
-documentation updates respectively. The reviewers might ask for
-additional clarifications and/or changes prior to merging the PR. When
-contemplating contributing code, please follow the style guide below.
+really appreciate those). 
+
+Contributions, even those from core members, are always expected to
+come in the form of a pull request (PR) that then undergoes a formal
+review. To do this, start by forking the package you want to
+contribute. It is also advised to work in, and make the PR, from a
+non-master branch. Good branch names include `issueX` when it relates
+to a specific issue, `feat-X`, `bug-Y`, `docs-Z` for new features, bug
+fixes and documentation updates respectively. The reviewers might ask
+for additional clarifications and/or changes prior to merging the
+PR. When contemplating contributing code, please follow the style
+guide below.
+
+In particular, when several developers collaborate on a feature, an
+admin should create a dedicated branch
+`RforMassSpectrometry/Package:branch`. Developers should then fetch
+that branch in their local copy of the `Package` repository and send
+PRs to that branch too, where it will be reviewed, and eventually
+merged into `RforMassSpectrometry/Package:master`.
+
 
 See also the
 [tidyverse](https://github.com/tidyverse/.github/blob/master/CONTRIBUTING.md)
@@ -113,7 +122,7 @@ and
 [Mycrof](https://github.com/MycroftAI/mycroft-core/blob/dev/.github/CONTRIBUTING.md)
 contribution guides for additional resources and instructions.
 
-Reviewers we will do their best to help you to get the PR
+Reviewers will do their best to help you to get the PR
 merged^[Useful reading: The [nodejs reviewing PRs for
 reviewers](https://github.com/nodejs/node/blob/master/doc/guides/contributing/pull-requests.md#reviewing-pull-requests)
 guide].
@@ -123,7 +132,7 @@ We also anticipate to open up some specific requests for contributions
 and invite specific members of the community, if we identify a specific
 need and/or a specific developer to address that need.
 
-### Commit messages   {.unnumbered}
+### Commit messages {.unnumbered}
 
 Commit messages should follow the [Conventional
 Commits](https://www.conventionalcommits.org/en/v1.0.0-beta.4/#summary)
