@@ -1,36 +1,38 @@
 Package: RforMassSpectrometry
 Title: R for MassSpectrometry meta-package
-Version: 0.1.2
+Version: 0.1.3
 Description: The RforMassSpectrometry meta-package loads and manages
    the core packages of the R for Mass Spectrometry initiative, that
    provide efficient, thoroughly documented, tested and flexible R
    software for the analysis and interpretation of high throughput
    mass spectrometry assays.
 Authors@R: c(person(given = "Laurent", family = "Gatto",
-		    comment = c(ORCID = "0000-0002-1520-2268"),
-		    email = "laurent.gatto@uclouvain.be",
-		    role = c("aut","cre")),
-	     person(given = "Johannes", family = "Rainer",
-		    email = "Johannes.Rainer@eurac.edu",
-		    role = "aut",
-		    comment = c(ORCID = "0000-0002-6977-7147")),
-	     person(given = "Sebastian", family = "Gibb",
-		    email = "mail@sebastiangibb.de",
-		    role = "aut",
-		    comment = c(ORCID = "0000-0001-7406-4443")))
+                    comment = c(ORCID = "0000-0002-1520-2268"),
+                    email = "laurent.gatto@uclouvain.be",
+                    role = c("aut","cre")),
+             person(given = "Johannes", family = "Rainer",
+                    email = "Johannes.Rainer@eurac.edu",
+                    role = "aut",
+                    comment = c(ORCID = "0000-0002-6977-7147")),
+             person(given = "Sebastian", family = "Gibb",
+                    email = "mail@sebastiangibb.de",
+                    role = "aut",
+                    comment = c(ORCID = "0000-0001-7406-4443")))
 Depends: R (>= 3.5.0)
 Imports:
   MsExperiment,
-  Chromatograms,
   Spectra,
-  Features,
-  MsCoreUtils
+  QFeatures,
+  MsCoreUtils,
+  MetaboCoreUtils,
+  PSM
 Suggests: BiocStyle, knitr, rmarkdown
 Remotes:
   RforMassSpectrometry/MsExperiment,
+  RforMassSpectrometry/PSM,
   RforMassSpectrometry/Spectra,
-  RforMassSpectrometry/Chromatograms,
-  RforMassSpectrometry/Features,
+  RforMassSpectrometry/QFeatures,
+  RforMassSpectrometry/MetaboCoreUtils,
   RforMassSpectrometry/MsCoreUtils
 URL: https://www.RforMassSpectrometry.org/
 BugReports: https://github.com/RforMassSpectrometry/RforMassSpectrometry/issues
@@ -38,4 +40,4 @@ VignetteBuilder: knitr
 License: Artistic-2.0
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 6.1.1
+RoxygenNote: 7.1.1
