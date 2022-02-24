@@ -3,7 +3,7 @@
 import(MetaboCoreUtils)
 import(MsCoreUtils)
 import(MsExperiment)
-import(PSM)
+import(PSMatch)
 import(QFeatures)
 import(Spectra)
 importFrom(utils,packageVersion)
