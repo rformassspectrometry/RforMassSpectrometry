@@ -20,5 +20,5 @@
 #' @import QFeatures
 #' @import MsCoreUtils
 #' @import MetaboCoreUtils
-#' @import PSM
+#' @import PSMatch
 NULL
