@@ -124,7 +124,7 @@ contribution guides for additional resources and instructions.
 
 Reviewers will do their best to help you to get the PR
 merged^[Useful reading: The [nodejs reviewing PRs for
-reviewers](https://github.com/nodejs/node/blob/master/doc/guides/contributing/pull-requests.md#reviewing-pull-requests)
+reviewers](https://github.com/nodejs/node/blob/main/doc/contributing/pull-requests.md#reviewing-pull-requests)
 guide].
 
 
