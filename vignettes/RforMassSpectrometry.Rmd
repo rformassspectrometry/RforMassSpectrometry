@@ -117,10 +117,7 @@ merged into `RforMassSpectrometry/Package:master`.
 
 
 See also the
-[tidyverse](https://github.com/tidyverse/.github/blob/master/CONTRIBUTING.md)
-and
-[Mycrof](https://github.com/MycroftAI/mycroft-core/blob/dev/.github/CONTRIBUTING.md)
-contribution guides for additional resources and instructions.
+[tidyverse](https://tidyverse.tidyverse.org/CONTRIBUTING.html) contribution guide for additional resources and instructions.
 
 Reviewers will do their best to help you to get the PR
 merged^[Useful reading: The [nodejs reviewing PRs for
