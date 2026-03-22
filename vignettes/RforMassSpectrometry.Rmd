@@ -89,24 +89,30 @@ This Code of Conduct is adapted from the Contributor Covenant, version
 
 The *R for Mass Spectrometry* project welcomes contributions in the
 form of ideas, documentation, code, packages, fixes (bugs and typos),
-... We invite you to discuss any of these opening a GitHub issue in
-the relevant package github repository.
+... as pull requests (PR). We invite you to discuss any of these
+opening a GitHub issue in the relevant package github repository.
 
-If you have any direct contributions to an existing repository, we
-suggest to first discuss these as an issue if it implies any
+If you have any direct contributions to an existing package, we
+suggest to first discuss these in a dedicted issue if it implies any
 substantial changes (no need for an issue if its a simple typo, and we
-really appreciate those). 
+really appreciate those). If a non-trivial portion of your
+contribution is copied from somewhere else (such as AI-generated or
+copied from another software project) you are required to discuss it
+in the issue and disclose it in the PR description and provide details
+about the provenance (for example, 'Assisted-by: Name of AI' or 'Code
+copied from: source'). Make sure to cite the provenance in the new
+code and that the newly contributed code can be redistributed under
+the software/packages licensing terms.
 
 Contributions, even those from core members, are always expected to
-come in the form of a pull request (PR) that then undergoes a formal
-review. To do this, start by forking the package you want to
-contribute. It is also advised to work in, and make the PR, from a
-non-master branch. Good branch names include `issueX` when it relates
-to a specific issue, `feat-X`, `bug-Y`, `docs-Z` for new features, bug
-fixes and documentation updates respectively. The reviewers might ask
-for additional clarifications and/or changes prior to merging the
-PR. When contemplating contributing code, please follow the style
-guide below.
+come in the form of a PR that then undergoes a formal review. To do
+this, start by forking the package you want to contribute. It is also
+advised to work in, and make the PR, from a non-master branch. Good
+branch names include `issueX` when it relates to a specific issue,
+`feat-X`, `bug-Y`, `docs-Z` for new features, bug fixes and
+documentation updates respectively. The reviewers might ask for
+additional clarifications and/or changes prior to merging the PR. When
+contemplating contributing code, please follow the style guide below.
 
 In particular, when several developers collaborate on a feature, an
 admin should create a dedicated branch
@@ -115,19 +121,22 @@ that branch in their local copy of the `Package` repository and send
 PRs to that branch too, where it will be reviewed, and eventually
 merged into `RforMassSpectrometry/Package:master`.
 
-
-See also the
-[tidyverse](https://tidyverse.tidyverse.org/CONTRIBUTING.html) contribution guide for additional resources and instructions.
-
-Reviewers will do their best to help you to get the PR
-merged^[Useful reading: The [nodejs reviewing PRs for
-reviewers](https://github.com/nodejs/node/blob/main/doc/contributing/pull-requests.md#reviewing-pull-requests)
-guide].
-
-
 We also anticipate to open up some specific requests for contributions
-and invite specific members of the community, if we identify a specific
-need and/or a specific developer to address that need.
+and invite specific members of the community, if we identify a
+specific need and/or a specific developer to address that need.
+
+All *R for Mass Spectrometry* packages are released under open
+licences. Any contributions will have to adhere to these. If you
+cannot guarantee the provenance and legality of your contribution,
+please do not submit it as we won't be able to accept it.
+
+Reviewers will do their best to help you to get the PR merged^[Useful
+reading: The [nodejs reviewing PRs for
+reviewers](https://github.com/nodejs/node/blob/main/doc/contributing/pull-requests.md#reviewing-pull-requests)
+guide]. See also the
+[tidyverse](https://tidyverse.tidyverse.org/CONTRIBUTING.html)
+contribution guide for additional resources and instructions.
+
 
 ### Commit messages {.unnumbered}
 
@@ -214,7 +223,6 @@ someVeryLongVariableName <- someVeryLongFunctionName(
     withSomeEvenLongerFunctionArgumentA = 1,
     withSomeEvenLongerFunctionArgumentB = 2)
 ```
-
 
 # Contact
 
