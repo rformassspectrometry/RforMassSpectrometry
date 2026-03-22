@@ -133,7 +133,9 @@ please do not submit it as we won't be able to accept it.
 Reviewers will do their best to help you to get the PR merged^[Useful
 reading: The [nodejs reviewing PRs for
 reviewers](https://github.com/nodejs/node/blob/main/doc/contributing/pull-requests.md#reviewing-pull-requests)
-guide]. See also the
+guide and Guix' [Reviewing the Work of Others](
+https://guix.gnu.org/manual/devel/en/guix.html#Reviewing-the-Work-of-Others)]. See
+also the
 [tidyverse](https://tidyverse.tidyverse.org/CONTRIBUTING.html)
 contribution guide for additional resources and instructions.
 
