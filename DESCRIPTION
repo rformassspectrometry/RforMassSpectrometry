@@ -1,6 +1,6 @@
 Package: RforMassSpectrometry
 Title: R for MassSpectrometry meta-package
-Version: 0.1.5
+Version: 0.2.0
 Description: The RforMassSpectrometry meta-package loads and manages
    the core packages of the R for Mass Spectrometry initiative, that
    provide efficient, thoroughly documented, tested and flexible R
@@ -25,7 +25,8 @@ Imports:
   QFeatures,
   MsCoreUtils,
   MetaboCoreUtils,
-  PSMatch
+  PSMatch,
+  PTMods
 Suggests: BiocStyle, knitr, rmarkdown
 URL: https://www.RforMassSpectrometry.org/
 BugReports: https://github.com/RforMassSpectrometry/RforMassSpectrometry/issues
