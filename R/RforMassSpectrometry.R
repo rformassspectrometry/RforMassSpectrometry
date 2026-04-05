@@ -20,4 +20,5 @@
 #' @import MsCoreUtils
 #' @import MetaboCoreUtils
 #' @import PSMatch
+#' @import PTMods
 "_PACKAGE"
