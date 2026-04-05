@@ -12,7 +12,7 @@
 #'
 #' See https://www.rformassspectrometry.org/ for details.
 #'
-#' @docType package
+#' @docType _PACKAGE
 #' @name RforMassSpectrometry
 #'
 #' @import MsExperiment
