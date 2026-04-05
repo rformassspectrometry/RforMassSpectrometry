@@ -12,7 +12,6 @@
 #'
 #' See https://www.rformassspectrometry.org/ for details.
 #'
-#' @docType _PACKAGE
 #' @name RforMassSpectrometry
 #'
 #' @import MsExperiment
@@ -21,4 +20,4 @@
 #' @import MsCoreUtils
 #' @import MetaboCoreUtils
 #' @import PSMatch
-NULL
+"_PACKAGE"
