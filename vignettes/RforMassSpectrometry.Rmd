@@ -85,6 +85,9 @@ opening an issue or contacting one or more of the project maintainers.
 This Code of Conduct is adapted from the Contributor Covenant, version
 1.0.0, available from http://contributor-covenant.org/version/1/0/0/
 
+As members of the Bioconductor community, we also abide by the 
+[Bioconductor code of conduct](https://bioconductor.org/about/code-of-conduct/).
+
 # Contributions
 
 The *R for Mass Spectrometry* project welcomes contributions in the
