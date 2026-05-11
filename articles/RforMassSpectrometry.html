@@ -88,7 +88,18 @@ Rainer</h4>
 
     
     
-<div class="section level2">
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function() {
+  document.querySelector("h1").className = "title";
+});
+</script><script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function() {
+  var links = document.links;  
+  for (var i = 0, linksLength = links.length; i < linksLength; i++)
+    if (links[i].hostname != window.location.hostname)
+      links[i].target = '_blank';
+});
+</script><div class="section level2">
 <h2 id="introduction">Introduction<a class="anchor" aria-label="anchor" href="#introduction"></a>
 </h2>
 <p><code>RforMassSpectrometry</code> is a meta-package, to manage and
@@ -344,7 +355,7 @@ for instructions on how to get in touch.</p>
 <span><span class="co">## [15] parallel_4.5.2              tibble_3.3.1               </span></span>
 <span><span class="co">## [17] cluster_2.1.8.2             pkgconfig_2.0.3            </span></span>
 <span><span class="co">## [19] BiocBaseUtils_1.12.0        Matrix_1.7-5               </span></span>
-<span><span class="co">## [21] desc_1.4.3                  S4Vectors_0.49.1-1         </span></span>
+<span><span class="co">## [21] desc_1.4.3                  S4Vectors_0.48.1           </span></span>
 <span><span class="co">## [23] lifecycle_1.0.5             compiler_4.5.2             </span></span>
 <span><span class="co">## [25] stringr_1.6.0               textshaping_1.0.5          </span></span>
 <span><span class="co">## [27] Seqinfo_1.0.0               codetools_0.2-20           </span></span>
@@ -363,19 +374,19 @@ for instructions on how to get in touch.</p>
 <span><span class="co">## [53] cli_3.6.6                   SparseArray_1.10.10        </span></span>
 <span><span class="co">## [55] magrittr_2.0.5              S4Arrays_1.10.1            </span></span>
 <span><span class="co">## [57] rmarkdown_2.31              XVector_0.50.0             </span></span>
-<span><span class="co">## [59] matrixStats_1.5.0           igraph_2.2.3               </span></span>
+<span><span class="co">## [59] matrixStats_1.5.0           igraph_2.3.1               </span></span>
 <span><span class="co">## [61] otel_0.2.0                  ragg_1.5.2                 </span></span>
 <span><span class="co">## [63] evaluate_1.0.5              knitr_1.51                 </span></span>
 <span><span class="co">## [65] GenomicRanges_1.62.1        IRanges_2.44.0             </span></span>
 <span><span class="co">## [67] MultiAssayExperiment_1.36.2 rlang_1.2.0                </span></span>
-<span><span class="co">## [69] Rcpp_1.1.1-1                glue_1.8.0                 </span></span>
+<span><span class="co">## [69] Rcpp_1.1.1-1.1              glue_1.8.1                 </span></span>
 <span><span class="co">## [71] DBI_1.3.0                   BiocManager_1.30.27        </span></span>
 <span><span class="co">## [73] BiocGenerics_0.56.0         Spectra_1.20.1             </span></span>
 <span><span class="co">## [75] jsonlite_2.0.0              plyr_1.8.9                 </span></span>
 <span><span class="co">## [77] AnnotationFilter_1.34.0     R6_2.6.1                   </span></span>
 <span><span class="co">## [79] MatrixGenerics_1.22.0       systemfonts_1.3.2          </span></span>
-<span><span class="co">## [81] fs_2.0.1                    ProtGenerics_1.42.0        </span></span>
-<span><span class="co">## [83] MsCoreUtils_1.23.9</span></span></code></pre>
+<span><span class="co">## [81] fs_2.1.0                    ProtGenerics_1.42.0        </span></span>
+<span><span class="co">## [83] MsCoreUtils_1.25.4</span></span></code></pre>
 </div>
 <div class="footnotes footnotes-end-of-document">
 <hr>
