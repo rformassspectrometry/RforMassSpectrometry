@@ -9,12 +9,18 @@ author:
   affiliation: Eurac Research, Bolzano, Italy
 package: RforMassSpectrometry
 output:
-  BiocStyle::html_document
+  BiocStyle::html_document:
+    toc_float: true
 vignette: |
   %\VignetteIndexEntry{The R for Mass Spectrometry project and meta-package}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
+
+
+```{r style, echo = FALSE, results = 'asis'}
+BiocStyle::markdown()
+```
 
 # Introduction
 
