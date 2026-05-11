@@ -32,6 +32,7 @@ Useful links:
 
 Authors:
 \itemize{
+  \item Laurent Gatto \email{laurent.gatto@uclouvain.be} (\href{https://orcid.org/0000-0002-1520-2268}{ORCID})
   \item Johannes Rainer \email{Johannes.Rainer@eurac.edu} (\href{https://orcid.org/0000-0002-6977-7147}{ORCID})
   \item Sebastian Gibb \email{mail@sebastiangibb.de} (\href{https://orcid.org/0000-0001-7406-4443}{ORCID})
 }
