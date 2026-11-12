@@ -91,7 +91,7 @@ opening an issue or contacting one or more of the project maintainers.
 This Code of Conduct is adapted from the Contributor Covenant, version
 1.0.0, available from http://contributor-covenant.org/version/1/0/0/
 
-As members of the Bioconductor community, we also abide by the 
+As members of the Bioconductor community, we also abide by the
 [Bioconductor code of conduct](https://bioconductor.org/about/code-of-conduct/).
 
 # Contributions
@@ -234,6 +234,25 @@ someVeryLongVariableName <- someVeryLongFunctionName(
     withSomeEvenLongerFunctionArgumentA = 1,
     withSomeEvenLongerFunctionArgumentB = 2)
 ```
+
+
+# Licensing
+
+The preferred code license for R for Mass Spectrometry packages is GPL
+(>= 3). Documentation should be licensed using CC BY-SA (>= 4).
+
+In the README.md file, please add the following (adapting accordingly)
+
+> The PSMatch code is provided under a
+> [GPL-3](https://opensource.org/license/gpl-3.0) license. The
+> documentation, including the manual pages and the vignettes, are
+> distributed under a [CC BY-SA
+> license](https://creativecommons.org/licenses/by-sa/4.0/).
+
+In each vignettes, please add the following:
+
+> This vignette is distributed under a [CC BY-SA
+> license](https://creativecommons.org/licenses/by-sa/4.0/).
 
 # Contact
 
