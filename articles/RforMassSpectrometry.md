@@ -221,6 +221,24 @@ someVeryLongVariableName <- someVeryLongFunctionName(
     withSomeEvenLongerFunctionArgumentB = 2)
 ```
 
+## Licensing
+
+The preferred code license for R for Mass Spectrometry packages is GPL
+(\>= 3). Documentation should be licensed using CC BY-SA (\>= 4).
+
+In the README.md file, please add the following (adapting accordingly)
+
+> The PSMatch code is provided under a
+> [GPL-3](https://opensource.org/license/gpl-3.0) license. The
+> documentation, including the manual pages and the vignettes, are
+> distributed under a [CC BY-SA
+> license](https://creativecommons.org/licenses/by-sa/4.0/).
+
+In each vignettes, please add the following:
+
+> This vignette is distributed under a [CC BY-SA
+> license](https://creativecommons.org/licenses/by-sa/4.0/).
+
 ## Contact
 
 Please see the [contact
@@ -252,19 +270,19 @@ how to get in touch.
     ## [1] stats     graphics  grDevices utils     datasets  methods   base     
     ## 
     ## other attached packages:
-    ## [1] RforMassSpectrometry_0.2.2 BiocStyle_2.38.0          
+    ## [1] RforMassSpectrometry_0.2.3 BiocStyle_2.38.0          
     ## 
     ## loaded via a namespace (and not attached):
     ##  [1] SummarizedExperiment_1.40.0 MsExperiment_1.12.0        
-    ##  [3] xfun_0.57                   bslib_0.10.0               
+    ##  [3] xfun_0.62                   bslib_0.12.0               
     ##  [5] htmlwidgets_1.6.4           QFeatures_1.20.0           
     ##  [7] PSMatch_1.14.0              Biobase_2.70.0             
-    ##  [9] lattice_0.22-9              PTMods_0.99.6              
+    ##  [9] lattice_0.23-1              PTMods_1.1.1               
     ## [11] vctrs_0.7.3                 tools_4.5.2                
     ## [13] generics_0.1.4              stats4_4.5.2               
     ## [15] parallel_4.5.2              tibble_3.3.1               
-    ## [17] cluster_2.1.8.2             pkgconfig_2.0.3            
-    ## [19] BiocBaseUtils_1.12.0        Matrix_1.7-5               
+    ## [17] cluster_2.1.8.3             pkgconfig_2.0.3            
+    ## [19] BiocBaseUtils_1.12.0        Matrix_1.7-6               
     ## [21] desc_1.4.3                  S4Vectors_0.48.1           
     ## [23] lifecycle_1.0.5             compiler_4.5.2             
     ## [25] stringr_1.6.0               textshaping_1.0.5          
@@ -272,24 +290,24 @@ how to get in touch.
     ## [29] clue_0.3-68                 htmltools_0.5.9            
     ## [31] sass_0.4.10                 yaml_2.3.12                
     ## [33] lazyeval_0.2.3              pillar_1.11.1              
-    ## [35] tidyr_1.3.2                 pkgdown_2.2.0.9000         
-    ## [37] jquerylib_0.1.4             MASS_7.3-65                
+    ## [35] tidyr_1.3.2                 pkgdown_2.2.1.9000         
+    ## [37] jquerylib_0.1.4             MASS_7.3-66                
     ## [39] BiocParallel_1.44.0         cachem_1.1.0               
     ## [41] DelayedArray_0.36.1         MetaboCoreUtils_1.18.1     
     ## [43] abind_1.4-8                 tidyselect_1.2.1           
-    ## [45] digest_0.6.39               stringi_1.8.7              
+    ## [45] digest_0.6.39               stringi_1.8.9              
     ## [47] purrr_1.2.2                 dplyr_1.2.1                
-    ## [49] reshape2_1.4.5              bookdown_0.46              
+    ## [49] reshape2_1.4.5              bookdown_0.48              
     ## [51] fastmap_1.2.0               grid_4.5.2                 
     ## [53] cli_3.6.6                   SparseArray_1.10.10        
     ## [55] magrittr_2.0.5              S4Arrays_1.10.1            
-    ## [57] rmarkdown_2.31              XVector_0.50.0             
-    ## [59] matrixStats_1.5.0           igraph_2.3.1               
-    ## [61] otel_0.2.0                  ragg_1.5.2                 
-    ## [63] evaluate_1.0.5              knitr_1.51                 
+    ## [57] rmarkdown_2.32              XVector_0.50.0             
+    ## [59] matrixStats_1.5.0           igraph_2.3.4               
+    ## [61] otel_0.3.0                  ragg_1.5.2                 
+    ## [63] evaluate_1.0.5              knitr_1.52                 
     ## [65] GenomicRanges_1.62.1        IRanges_2.44.0             
-    ## [67] MultiAssayExperiment_1.36.2 rlang_1.2.0                
-    ## [69] Rcpp_1.1.1-1.1              glue_1.8.1                 
+    ## [67] MultiAssayExperiment_1.36.2 rlang_1.3.0                
+    ## [69] Rcpp_1.1.2                  glue_1.8.1                 
     ## [71] DBI_1.3.0                   BiocManager_1.30.27        
     ## [73] BiocGenerics_0.56.0         Spectra_1.20.1             
     ## [75] jsonlite_2.0.0              plyr_1.8.9                 
